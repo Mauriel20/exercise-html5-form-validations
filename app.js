@@ -28,7 +28,7 @@ window.addEventListener('load', function () {
         }
 
         if (Card == "") {
-            alert("Esta vacío")
+            alert("No ha ingresado un número de tarjeta")
 
         }
 
