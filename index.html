@@ -24,38 +24,38 @@
                     <form action="#" id="formulario1" onsubmit="return false">
                         <div class="card-body">
                             <div class="col-md-12 col-lg-12 alert alert-danger" role="alert">
-                                <strong>Some fields are missing</strong>
+                                <strong id="strong">Campos vacios encontrados</strong>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <label for="inlineFormInput"><strong>#card</strong></label>
                                     <input id="Card" autofocus name="nombre" type="text" placeholder="number card"
-                                        autocomplete="off">
+                                        autocomplete="off" pattern="[0-9]+" maxlength="16"/>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inlineFormInput"><strong>#CVC</strong>
                                     </label>
-                                    <input id="CVC" value="" type="text" placeholder="Número de seguridad" autocomplete="off">
+                                    <input id="CVC" value="" type="text" placeholder="Número de seguridad" autocomplete="off"  pattern="[0-9]+" maxlength="4"/>
                                 </div>
 
 
                                 <div class="col-md-6">
                                     <label for="inlineFormInput"><strong>FirstName</strong>
                                     </label>
-                                    <input id="FirstName" type="text" placeholder="Name">
+                                    <input id="FirstName" value="" type="text" placeholder="Name" pattern="^[a-zA-Z\s]{2,254}" />
                                 </div>
 
                                 <div class="col-md-6">
                                     <label for="inlineFormInput"><strong>LastName</strong>
                                     </label>
-                                    <input id="LastName" type="text" placeholder="LastName">
+                                    <input id="LastName" value="" type="text" placeholder="LastName"  pattern="^[a-zA-Z\s]{2,254}" />>
                                 </div>
 
 
                                 <div class="col-md-6">
                                     <label for="inlineFormInput"><strong>City</strong>
                                     </label>
-                                    <input id="City" type="text" placeholder="state">
+                                    <input id="City" value="" type="text" placeholder="state"  pattern="^[a-zA-Z\s]{2,254}" />
                                 </div>
 
 
@@ -72,8 +72,8 @@
 
                                 <div class="col-md-3">
                                     <label for="inlineFormInput"><strong>Postal Code</strong></label>
-                                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="70101"
-                                        maxlength="4">
+                                    <input type="text" class="form-control mb-2" id="Postalcode" value="" placeholder="70101"
+                                        maxlength="4" pattern="[0-9]+">
                                 </div>
 
                                 <div class="col-md-6">
